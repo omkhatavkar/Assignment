@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2 (Python 3.7.0 on win32)" generated="20230922 21:42:58.472" rpa="false">
+<robot generator="Robot 3.2 (Python 3.7.0 on win32)" generated="20230925 11:04:20.804" rpa="false">
 <suite id="s1" name="Assignment" source="C:\Users\okhatavk\eclipse-workspace\Assignment">
 <suite id="s1-s1" name="Tests" source="C:\Users\okhatavk\eclipse-workspace\Assignment\Tests">
 <suite id="s1-s1-s1" name="homePageTest" source="C:\Users\okhatavk\eclipse-workspace\Assignment\Tests\homePageTest.robot">
-<kw name="OPEN" library="CommonFunctionalities" type="setup">
+<test id="s1-s1-s1-t1" name="Checking Elements on the Page">
+<kw name="OPEN" library="CommonFunctionalities">
+<arguments>
+<arg>${browser1}</arg>
+</arguments>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20230922 21:42:58.658" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/okhatavk/Desktop/testautomation-web/testautomation-web/index.html'.</msg>
-<status status="PASS" starttime="20230922 21:42:58.658" endtime="20230922 21:43:00.740"></status>
+<msg timestamp="20230925 11:04:21.086" level="INFO">Opening browser 'headlesschrome' to base url 'file:///C:/Users/okhatavk/Desktop/testautomation-web/testautomation-web/index.html'.</msg>
+<status status="PASS" starttime="20230925 11:04:21.085" endtime="20230925 11:04:23.089"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230922 21:43:00.741" endtime="20230922 21:43:00.865"></status>
+<status status="PASS" starttime="20230925 11:04:23.090" endtime="20230925 11:04:23.209"></status>
 </kw>
 <kw name="Delete All Cookies" library="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" starttime="20230922 21:43:00.866" endtime="20230922 21:43:00.885"></status>
+<status status="PASS" starttime="20230925 11:04:23.209" endtime="20230925 11:04:23.229"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:42:58.657" endtime="20230922 21:43:00.887"></status>
+<status status="PASS" starttime="20230925 11:04:21.084" endtime="20230925 11:04:23.229"></status>
 </kw>
-<test id="s1-s1-s1-t1" name="Checking Elements on the Page">
 <kw name="LOGIN" library="CommonFunctionalities">
 <arguments>
 <arg>${username1}</arg>
@@ -35,8 +38,8 @@
 <arg>${emailAddressField}</arg>
 <arg>${user}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:00.891" level="INFO">Typing text 'admin@admin.com' into text field 'xpath=//input[@id="email"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:00.891" endtime="20230922 21:43:01.086"></status>
+<msg timestamp="20230925 11:04:23.231" level="INFO">Typing text 'admin@admin.com' into text field 'xpath=//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.231" endtime="20230925 11:04:23.371"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -44,57 +47,57 @@
 <arg>${passwordField}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.087" level="INFO">Typing text '2020' into text field 'xpath=//input[@id="password"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.086" endtime="20230922 21:43:01.304"></status>
+<msg timestamp="20230925 11:04:23.371" level="INFO">Typing text '2020' into text field 'xpath=//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.371" endtime="20230925 11:04:23.483"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${loginButton}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.304" level="INFO">Clicking element 'xpath=//input[@id="login"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.304" endtime="20230922 21:43:01.421"></status>
+<msg timestamp="20230925 11:04:23.483" level="INFO">Clicking element 'xpath=//input[@id="login"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.483" endtime="20230925 11:04:23.539"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${userIcon}</arg>
 </arguments>
-<status status="PASS" starttime="20230922 21:43:01.422" endtime="20230922 21:43:01.443"></status>
+<status status="PASS" starttime="20230925 11:04:23.539" endtime="20230925 11:04:23.553"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${homeIcon}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.464" level="INFO">Current page contains element 'xpath=//div[@class="home"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.445" endtime="20230922 21:43:01.464"></status>
+<msg timestamp="20230925 11:04:23.566" level="INFO">Current page contains element 'xpath=//div[@class="home"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.553" endtime="20230925 11:04:23.567"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:43:00.890" endtime="20230922 21:43:01.466"></status>
+<status status="PASS" starttime="20230925 11:04:23.230" endtime="20230925 11:04:23.567"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${productsIcon}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.490" level="INFO">Current page contains element 'xpath=//div[@class="products"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.467" endtime="20230922 21:43:01.490"></status>
+<msg timestamp="20230925 11:04:23.587" level="INFO">Current page contains element 'xpath=//div[@class="products"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.567" endtime="20230925 11:04:23.587"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${contactIcon}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.507" level="INFO">Current page contains element 'xpath=//div[@class="contact"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.490" endtime="20230922 21:43:01.507"></status>
+<msg timestamp="20230925 11:04:23.603" level="INFO">Current page contains element 'xpath=//div[@class="contact"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.589" endtime="20230925 11:04:23.604"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.523" level="INFO">Current page contains element 'xpath=//div[@class="div-container"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.508" endtime="20230922 21:43:01.523"></status>
+<msg timestamp="20230925 11:04:23.621" level="INFO">Current page contains element 'xpath=//div[@class="div-container"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.605" endtime="20230925 11:04:23.621"></status>
 </kw>
 <kw name="LOGOUT" library="CommonFunctionalities">
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
@@ -102,72 +105,143 @@
 <arguments>
 <arg>${userIcon}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.552" level="INFO">Current page contains element 'xpath=//i[@class="fas fa-user-circle"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.524" endtime="20230922 21:43:01.552"></status>
+<msg timestamp="20230925 11:04:23.634" level="INFO">Current page contains element 'xpath=//i[@class="fas fa-user-circle"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.622" endtime="20230925 11:04:23.635"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${userIcon}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.552" level="INFO">Clicking element 'xpath=//i[@class="fas fa-user-circle"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.552" endtime="20230922 21:43:01.635"></status>
+<msg timestamp="20230925 11:04:23.635" level="INFO">Clicking element 'xpath=//i[@class="fas fa-user-circle"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.635" endtime="20230925 11:04:23.722"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${logOut}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.636" level="INFO">Clicking element 'xpath=//div[@id="logout"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.635" endtime="20230922 21:43:01.697"></status>
+<msg timestamp="20230925 11:04:23.723" level="INFO">Clicking element 'xpath=//div[@id="logout"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.722" endtime="20230925 11:04:23.800"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${displayIcon}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.711" level="INFO">Current page contains element 'xpath=//*[text()="Automation doesn't stop at testing, it's just a beginning!"]'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.697" endtime="20230922 21:43:01.712"></status>
+<msg timestamp="20230925 11:04:23.818" level="INFO">Current page contains element 'xpath=//*[text()="Automation doesn't stop at testing, it's just a beginning!"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.800" endtime="20230925 11:04:23.818"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:43:01.523" endtime="20230922 21:43:01.712"></status>
+<status status="PASS" starttime="20230925 11:04:23.622" endtime="20230925 11:04:23.818"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:43:00.888" endtime="20230922 21:43:01.713" critical="yes"></status>
+<status status="PASS" starttime="20230925 11:04:21.082" endtime="20230925 11:04:23.818" critical="yes"></status>
 </test>
-<test id="s1-s1-s1-t2" name="CapturingText">
+<test id="s1-s1-s1-t2" name="Getting Text value">
+<kw name="OPEN" library="CommonFunctionalities">
+<arguments>
+<arg>${browser1}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20230925 11:04:23.821" level="INFO">Opening browser 'headlesschrome' to base url 'file:///C:/Users/okhatavk/Desktop/testautomation-web/testautomation-web/index.html'.</msg>
+<status status="PASS" starttime="20230925 11:04:23.820" endtime="20230925 11:04:25.792"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230925 11:04:25.792" endtime="20230925 11:04:25.911"></status>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20230925 11:04:25.911" endtime="20230925 11:04:25.920"></status>
+</kw>
+<status status="PASS" starttime="20230925 11:04:23.820" endtime="20230925 11:04:25.921"></status>
+</kw>
+<kw name="LOGIN" library="CommonFunctionalities">
+<arguments>
+<arg>${username1}</arg>
+<arg>${password1}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailAddressField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20230925 11:04:25.923" level="INFO">Typing text 'admin@admin.com' into text field 'xpath=//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:25.923" endtime="20230925 11:04:26.018"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20230925 11:04:26.020" level="INFO">Typing text '2020' into text field 'xpath=//input[@id="password"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:26.019" endtime="20230925 11:04:26.088"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${loginButton}</arg>
+</arguments>
+<msg timestamp="20230925 11:04:26.088" level="INFO">Clicking element 'xpath=//input[@id="login"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:26.088" endtime="20230925 11:04:26.136"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${userIcon}</arg>
+</arguments>
+<status status="PASS" starttime="20230925 11:04:26.137" endtime="20230925 11:04:26.148"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${homeIcon}</arg>
+</arguments>
+<msg timestamp="20230925 11:04:26.159" level="INFO">Current page contains element 'xpath=//div[@class="home"]'.</msg>
+<status status="PASS" starttime="20230925 11:04:26.149" endtime="20230925 11:04:26.159"></status>
+</kw>
+<status status="PASS" starttime="20230925 11:04:25.921" endtime="20230925 11:04:26.159"></status>
+</kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=//div[@class="div-container"]/p</arg>
+<arg>${text}</arg>
 </arguments>
 <assign>
-<var>${cds}</var>
+<var>${get_text}</var>
 </assign>
-<msg timestamp="20230922 21:43:01.747" level="INFO">${cds} = </msg>
-<status status="PASS" starttime="20230922 21:43:01.715" endtime="20230922 21:43:01.747"></status>
+<msg timestamp="20230925 11:04:26.187" level="INFO">${get_text} = Lorem ipsum egestas posuere vivamus neque facilisis augue cursus litora rhoncus aenean aptent eu quis, odio scelerisque curabitur rhoncus sociosqu velit curae ipsum duis porttitor rhoncus amet. consec...</msg>
+<status status="PASS" starttime="20230925 11:04:26.160" endtime="20230925 11:04:26.187"></status>
 </kw>
 <kw name="Create File" library="OperatingSystem">
 <doc>Creates a file with the given content and encoding.</doc>
 <arguments>
-<arg>../Information.txt</arg>
-<arg>${cds}</arg>
+<arg>${path}</arg>
+<arg>${get_text}</arg>
 </arguments>
-<msg timestamp="20230922 21:43:01.749" level="INFO" html="yes">Created file '&lt;a href="file://C:\Users\okhatavk\eclipse-workspace\Information.txt"&gt;C:\Users\okhatavk\eclipse-workspace\Information.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20230922 21:43:01.748" endtime="20230922 21:43:01.749"></status>
+<msg timestamp="20230925 11:04:26.189" level="INFO" html="yes">Created file '&lt;a href="file://C:\Users\okhatavk\eclipse-workspace\Assignment\pageContent.txt"&gt;C:\Users\okhatavk\eclipse-workspace\Assignment\pageContent.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230925 11:04:26.187" endtime="20230925 11:04:26.189"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:43:01.714" endtime="20230922 21:43:01.749" critical="yes"></status>
+<status status="PASS" starttime="20230925 11:04:23.819" endtime="20230925 11:04:26.189" critical="yes"></status>
 </test>
 <kw name="CLOSE" library="CommonFunctionalities" type="teardown">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230922 21:43:01.750" endtime="20230922 21:43:03.931"></status>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230925 11:04:26.190" endtime="20230925 11:04:30.314"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:43:01.750" endtime="20230922 21:43:03.932"></status>
+<status status="PASS" starttime="20230925 11:04:26.190" endtime="20230925 11:04:30.314"></status>
 </kw>
-<status status="PASS" starttime="20230922 21:42:58.526" endtime="20230922 21:43:03.932"></status>
+<status status="PASS" starttime="20230925 11:04:20.874" endtime="20230925 11:04:30.314"></status>
 </suite>
-<status status="PASS" starttime="20230922 21:42:58.523" endtime="20230922 21:43:03.936"></status>
+<status status="PASS" starttime="20230925 11:04:20.871" endtime="20230925 11:04:30.317"></status>
 </suite>
-<status status="PASS" starttime="20230922 21:42:58.509" endtime="20230922 21:43:03.939"></status>
+<status status="PASS" starttime="20230925 11:04:20.849" endtime="20230925 11:04:30.319"></status>
 </suite>
 <statistics>
 <total>
