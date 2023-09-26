@@ -5,7 +5,6 @@ ${browser1}=    headlesschrome
 ${browser2}=    headlessfirefox 
 ${browser3}=    chrome
 ${browser4}=    firefox
-
 ${implicitWait}=   10  
 ${timeout}=    20
 ${username1}=    admin@admin.com

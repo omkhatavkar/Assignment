@@ -26,13 +26,13 @@ loginFunctionality2
 loginFunctionality3
     [tags]    thirdUser
     OPEN    ${browser3}
-    LOGIN     ${username3}    ${password3}  
+    LOGIN    ${username3}    ${password3}  
     LOGOUT
      
 #trying to logging in with wrong password
 loginFailure
     OPEN    ${browser4}
-    Input Text     ${emailAddressField}  ${username1}
+    Input Text    ${emailAddressField}    ${username1}
     Input Text    ${passwordField}    ${randompassword}   
     Click Element    ${loginButton}
     Page Should Contain Element     ${displayIcon}

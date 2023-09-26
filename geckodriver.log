@@ -324,8 +324,9 @@ Read port: 54323
 1695629048330	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.error: ({})
-1695629054116	geckodriver	INFO	Listening on 127.0.0.1:54374
-1695629054619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\okhatavk\\AppData\\Local\\Temp\\rust_mozprofileTg9f2w"
+Exiting due to channel error.
+Exiting due to channel error.
+95629054619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\okhatavk\\AppData\\Local\\Temp\\rust_mozprofileTg9f2w"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 1695629055292	Marionette	INFO	Marionette enabled
